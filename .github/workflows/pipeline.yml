@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download do Repositório
+
         uses: actions/checkout@v4       # https://github.com/actions/checkout
 
       - name: Setup Python

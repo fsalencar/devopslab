@@ -30,8 +30,8 @@ jobs:
 
       - name: Override Coverage Source Path for Sonar
         run: sed -i "s/<source>\/home\/runner\/work\/repo<\/source>/<source>\/github\/workspace<\/source>/g" /home/runner/work/devopslab/devopslab/coverage.xml
-             ls -las
-             pwd
+             |ls -las
+             | pwd
 
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master  #https://github.com/marketplace/actions/sonarcloud-scan
